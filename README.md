@@ -16,8 +16,8 @@ Unless otherwise noted, all datasets are released under the [Retrosheet license]
 | `is_qualified_pitcher` | Boolean flag indicating if the player qualified as a pitcher for pitching titles based on the standards in that year |
 | `is_qualified_batter_current_standards` | Boolean flag indicating if the player meets current MLB standards for batting qualification |
 | `is_qualified_pitcher_current_standards` | Boolean flag indicating if the player meets current MLB standards for pitching qualification |
-| `is_qualified_batter_rookie_standards` | Boolean flag indicating if the player meets thresholds for rookie awards as batter |
-| `is_qualified_pitcher_rookie_standards` | Boolean flag indicating if the player meets thresholds for rookie awards as pitcher |
+| `is_qualified_batter_rookie_standards` | Boolean flag indicating if the player meets thresholds for rookie awards as batter (Note: this does not verify in any way whether it was the player's rookie season) |
+| `is_qualified_pitcher_rookie_standards` | Boolean flag indicating if the player meets thresholds for rookie awards as pitcher (Note: this does not verify in any way whether it was the player's rookie season) |
 | `batter_pa` | Total plate appearances for the player as a batter that season |
 | `batter_ab` | Total at-bats for the player as a batter that season |
 | `pitcher_ip` | Total innings pitched for the player that season |
