@@ -8,6 +8,8 @@ Unless otherwise noted, all datasets are released under the [Retrosheet license]
 
 ## player_qualification_status.csv
 
+### A dataset of whether a player was a qualified batter or pitcher in a given year
+
 | Column | Description |
 |--------|-------------|
 | `retrosheet_id` | Unique identifier for a player in the Retrosheet database |
@@ -29,6 +31,22 @@ Caveats:
 * This dataset is only as accurate as the underlying retrosheet data (and my parsing of the retrosheet data), there are some edge cases in the early 1900s which are probably wrong. However I believe this dataset is at least 99% accurate based on random checking.
 
 This dataset as it appears here is used directly by [Screwball.ai](https://screwball.ai) to answers questions like [Who has the lowest era in a single season](https://screwball.ai/search?q=Who+has+the+lowest+era+in+a+single+season) or [Who won the batting title every year since 2000?](https://screwball.ai/search?q=Who+won+the+batting+title+every+year+since+2000%3F).
+
+## pitcher_pitch_counts_by_game.csv
+
+### A dataset of a pitchers pitch count, by game
+
+| Column | Description |
+|--------|-------------|
+| `game_id` | Unique identifier for a game in the Retrosheet database |
+| `retrosheet_id` | Unique identifier for a player in the Retrosheet database |
+| `pitch_count` | Total pitch count for the player in the game |
+| `strike_count` | Total strikes |
+| `ball_count` | Total balls |
+
+Caveats:
+* This dataset only includes games from 1988 and afterwards when retrosheet has (mostly) complete pitch sequence data.
+* This dataset is generated directly from the retrosheet play-by-play data, and therefore is only as accurate as the underlying retrosheet data. There may be cases where the data is wrong. However I believe it is at least 99% accurate based on random checking.
 
 # Acknowledgments
 The information used here was obtained free of charge from and is copyrighted by Retrosheet.  Interested parties may contact Retrosheet at "www.retrosheet.org".
