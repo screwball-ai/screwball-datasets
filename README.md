@@ -1,5 +1,5 @@
 # screwball-datasets
-Public datasets that are used by Screwball.ai to provide answers to sports queries
+Public datasets that are used by [Screwball.ai](https://screwball.ai) to provide answers to sports queries, shared to help build on the other free and public resources available that make deep analysis of sports statistics possible.
 
 # License
 Unless otherwise noted, all datasets are released under the [Retrosheet license](https://www.retrosheet.org/notice.txt).
