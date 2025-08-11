@@ -48,5 +48,27 @@ Caveats:
 * This dataset only includes games from 1988 and afterwards when retrosheet has (mostly) complete pitch sequence data.
 * This dataset is generated directly from the retrosheet play-by-play data, and therefore is only as accurate as the underlying retrosheet data. There may be cases where the data is wrong. However I believe it is at least 99% accurate based on random checking.
 
+## pitcher_relief_stats.csv
+
+### A dataset of a relief pitcher specific stats, by game
+
+| Column | Description |
+|--------|-------------|
+| `year` | MLB Season |
+| `game_id` | Unique identifier for a game in the Retrosheet database |
+| `team_id` | Unique identifier for the pitching team in the Retrosheet database |
+| `pitcher_id` | Unique identifier for a player in the Retrosheet database |
+| `blown_save` | Did the pitcher have a blown save in this game? |
+| `hold` | Did the pitcher have a hold in this game? |
+| `inherited_baserunners` | Number of inherited baserunners when this pitcher entered the game |
+| `inherited_baserunners_scored` | Number of inherited baserunners who scored while this pitcher was pitching |
+
+Caveats:
+* Both "blown saves" and "holds" are unofficial statistics based on the definition of what is a save situation, and not all sources agree on what is a valid save situation and what isn't. See this fantastic article called [The Unofficial Rules: Of Holds and Blown Saves](https://tht.fangraphs.com/the-unofficial-rules-of-holds-and-blown-saves/) for more details.
+* For both "blown saves" and "holds", all statistics in every year are calculated using modern standards, whether or not different years in the past used different standards
+* The `inherited_baserunners*` statistics are on a per-pitcher basis, if you aggregate them to team level statistics they may double count the same baserunner
+* This dataset is generated directly from the retrosheet play-by-play data, and therefore is only as accurate as the underlying retrosheet data. There may be cases where the data is wrong. However I believe it is at least 99% accurate based on random checking.
+
+
 # Acknowledgments
 The information used here was obtained free of charge from and is copyrighted by Retrosheet.  Interested parties may contact Retrosheet at "www.retrosheet.org".
